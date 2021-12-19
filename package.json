@@ -1,21 +1,73 @@
 {
-  "name": "api",
+  "name": "article-writer-api",
   "version": "1.0.0",
-  "description": "- Integrated with a message broker",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjonatansr/article-writer-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjonatansr/article-writer-api/issues"
+  },
+  "homepage": "https://github.com/pjonatansr/article-writer-api#readme",
   "dependencies": {
-    "koa": "^2.13.4",
-    "koa-ejs": "^4.3.0",
-    "koa-router": "^10.1.1"
+    "formidable": "^3.2.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa2-cors": "^2.0.5",
+    "redis": "^4.0.1",
+    "ts-node": "^3.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "husky": "^1.3.1",
+    "jest": "^27.4.5",
+    "prettier": "1.15.1",
+    "pretty-quick": "^1.11.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^27.1.2",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "start": "ts-node-dev src/server.ts",
+    "test": "NODE_ENV=test PORT=7788 jest",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "modulePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "roots": [
+      "<rootDir>/__tests__"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
