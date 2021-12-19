@@ -1,0 +1,15 @@
+{
+    "startDateTime": "2021-12-18T21:18:34.206Z",
+    "title": "1st!",
+    "language": "ptBR",
+    "disclaimer": "Essa é a minha primeira vez aprendendo tantas coisas diferentes ao mesmo tempo, desde idioma, linguagens, padrões, métodos, ferramentas, técnicas e até sobre mim mesmo. Isso é apenas como um playground para mim.",
+    "paragraph": [
+        "A ideia inicial é que seja construída uma estrutura json que sirva como contrato e que defina todas as propriedades de um artigo, para que em seguida essa informação seja tratada por uma aplicação que irá gerar os artigos, como se fossem relatórios, mas não de dados e sim do conteúdo criado por alguém, (que no caso sou eu mesmo). ",
+        "O intuito é transformar todo o conteúdo que um criador de conteúdo (usuário da api), insere em um documento organizado de acordo com o contrato pré-estabelecido das propriedades, através da ferramenta em um documento que possa automaticamente ser divulgado na web, seja num blog ou em qualquer outro formato de saída que o autor desejar.",
+        "Para começar, eu escolhi criar uma API Node.js, que vai receber o JSON e gerar um evento. Esse Json equivale aos dados para montar um artigo, como este aqui!",
+        "Há um tempo atrás eu havia dado um ponta-pé inicial com nodejs, mas em seguida comecei a me debruçar mais no Groovy e no C#, de acordo com os caminhos e desafios que iam aparecendo na minha vida. Naquela época eu usava o express, um amigo tinha me dado um curso de MEAN (Mongo, express, angular e node).",
+        "Dessa vez, será um pouco diferente, durante alguns dias que passei olhando por aí conversas de web-botecos de desenvolvedores ouvi falar sobre koajs e muitas pessoas estavam recomendando, logo, eu que estava interessado em praticar node novamente, resolvi adota-lo nessa prática por causa deste critério e nada mais. Já aviso que iremos ver muitas decisões desse tipo nesta série de artigos que estou planejando.",
+        "Acabei decidindo por instalar uma extensão do VsCode chamada \"node-snippets\", que facilitou o ponta-pé inicial neste novo projeto!!",
+        "Em seguida foi a vez de aprender um pouco mais sobre o Koa, dando uma olhada rápida na documentção, fiz meu Hello World e alguns testes iniciais somente para entender melhor o funcionamento... Já estamos prontos para trabalhar."
+    ]
+}
