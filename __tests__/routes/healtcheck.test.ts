@@ -1,5 +1,5 @@
 import server from "../../src/server";
-import request from "supertest";
+import * as request from "supertest";
 
 // close the server after each test
 afterEach(done => {
